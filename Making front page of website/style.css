@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  background-image: url("background.jpg");
+  background-size: cover;       /* make it cover whole wrapper */
+  background-position: center;  /* center the image */
+  background-repeat: no-repeat; /* prevent tiling */
+  color: white;
+}
+.container .top{
+    background-color: rgba(48, 48, 48, 0.70); 
+    display: flex;
+    justify-content: space-between;
+    padding:0 40px;
+    line-height: 4rem;
+}
+.container .top .title{
+    font-size:25px;
+    font-weight:600;
+}
+.container .top .feature
+{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.Paragraph {
+  font-size: 45px;
+  font-weight: 600;
+}
+.Body {
+  position:relative;
+  top: 50%;
+  transform: translateY(-20%);
+  color: rgb(255, 253, 253);
+  display: flex;
+  flex-direction: column;   /* stack items vertically */
+  align-items: center;      /* horizontal center */
+  height: 100%;             /* take full height of container */
+  text-align: center;       /* center text */
+
+}
+.botton{
+    display: flex;
+    gap: 20px;
+}
+.Learn,.Subscribe{
+     border: 3px  solid  rgb(255, 253, 253,0.9);
+     padding: 7px 17px;
+     border-radius: 3px;
+     font-size: 16px;
+     font-weight: 450;
+}
+.Learn:hover{
+   background-color: rgb(255, 253, 253,0.9) ;
+   color:black
+}
+.Subscribe{
+   background-color: rgb(255, 253, 253,0.9) ;
+   color:black
+}
+
+*::selection 
+{
+  background: grey;
+}
+.icon {
+   font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.icon:hover {
+  background-color: white; /* just behind the text */
+  color:black;          /* change text color for visibility */
+}
+
